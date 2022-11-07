@@ -11,7 +11,11 @@ function Profile() {
 
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem('user'));
-    setUserEmail(user.email);
+    if (user === '') {
+      setUserEmail('test@test.com');
+    } else {
+      setUserEmail(user.email);
+    }
   }, []);
 
   const onHandleClick = () => {

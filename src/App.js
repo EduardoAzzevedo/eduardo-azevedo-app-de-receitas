@@ -48,7 +48,7 @@ function App() {
         path="/explore/drinks/nationalities"
         component={ NotFound }
       />
-      <Route path="/profile" component={ Profile } />
+      <Route exact path="/profile" component={ Profile } />
       <Route path="/done-recipes" component={ DoneRecipes } />
       <Route path="/favorite-recipes" component={ FavoriteRecipes } />
     </Switch>
